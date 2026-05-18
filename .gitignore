@@ -1,0 +1,4 @@
+uploads/documents/*
+!uploads/documents/.htaccess
+.env
+*.log

@@ -1,0 +1,4 @@
+Options -Indexes
+# Deny direct browser access; files are served via PHP download controller
+Order Deny,Allow
+Deny from all
