@@ -1,4 +1,4 @@
-# Zimnat Life Assurance – Policy Renewal Reminder System (PRS)
+#Policy Renewal Reminder System (PRS)
 
 A lightweight internal web application built for Zimnat Life Assurance Company Limited to help staff manage insurance policy renewals, track expiry dates, upload supporting documents, and view summary dashboards.
 
@@ -172,31 +172,31 @@ Full system access.
 
 | Feature | Permission |
 |---|---|
-| Dashboard | ✅ View |
-| Policies | ✅ View, Add, Edit, Delete |
-| Documents | ✅ View, Upload, Delete, Download |
-| Users | ✅ Create, Edit, Activate/Deactivate |
+| Dashboard |  View |
+| Policies |  View, Add, Edit, Delete |
+| Documents |  View, Upload, Delete, Download |
+| Users |  Create, Edit, Activate/Deactivate |
 
 ### Policy Officer
 Operational access for day-to-day policy work.
 
 | Feature | Permission |
 |---|---|
-| Dashboard | ✅ View |
-| Policies | ✅ View, Add, Edit, Delete |
-| Documents | ✅ View, Upload, Delete, Download |
-| Users | ❌ No access |
+| Dashboard |  View |
+| Policies |  View, Add, Edit, Delete |
+| Documents |  View, Upload, Delete, Download |
+| Users |  No access |
 
 ### Viewer
 Read-only access for staff who need visibility without modification rights.
 
 | Feature | Permission |
 |---|---|
-| Dashboard | ✅ View |
-| Policies | ✅ View list and detail |
-| Documents | ✅ Download |
-| Add/Edit/Delete | ❌ Blocked |
-| Users | ❌ No access |
+| Dashboard |  View |
+| Policies |  View list and detail |
+| Documents |  Download |
+| Add/Edit/Delete |  Blocked |
+| Users |  No access |
 
 Role enforcement is implemented at the controller level via `AuthMiddleware::requireRole(...)`, ensuring that unauthorised actions return a 403 response even if a URL is accessed directly.
 
@@ -243,5 +243,5 @@ All generated code was reviewed for correctness, security, and alignment with th
 
 ---
 
-*Zimnat Life Assurance Company Limited – Internal System*  
-*© 2026 – Confidential*
+
+© 2026 – Confidential
